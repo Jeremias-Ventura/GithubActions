@@ -80,6 +80,7 @@ public class Program
 
 	public static double Divide(string x, string y)
 	{
+		if (y == "0") throw new DivideByZeroException();
 		return double.Parse(x) / double.Parse(y);
 	}
 
